@@ -28,7 +28,7 @@ class evaluation():
     def model_viz_3D(self):
         fig = viz_3d.init_figure()
         viz_3d.plot_reconstruction(
-            fig, self.model, color='rgba(255,0,0,0.5)', name="mapping", points_rgb=True)
+            fig, self.model, color='rgba(255,0,0,0.5)', name="mapping", points_rgb=True, cameras=True)
         fig.show()
 
     def kps_viz_3D(self, query, ret, log, camera):
@@ -46,7 +46,7 @@ class evaluation():
         viz_3d.plot_points(fig, inl_3d, color="lime", ps=1, name=query)
         fig.show()
 
-    def calc_reprojection_error(self, query, max_error=6, viz=False, dpi=400):
+    def calc_reprojection_error(self, query, max_error=1, viz=False, dpi=400):
         references = self.references
         model = self.model
         images = self.images
