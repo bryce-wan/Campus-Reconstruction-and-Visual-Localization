@@ -4,5 +4,6 @@ __pycache__
 .ipynb_checkpoints
 outputs/
 build/
+labdata/
 datasets/*
 !datasets/theater/

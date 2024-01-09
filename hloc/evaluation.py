@@ -25,10 +25,10 @@ class evaluation():
         for i in ids:
             self.references.append(self.model.images[i].name)
 
-    def model_viz_3D(self):
+    def model_viz_3D(self, cameras=True):
         fig = viz_3d.init_figure()
         viz_3d.plot_reconstruction(
-            fig, self.model, color='rgba(255,0,0,0.5)', name="mapping", points_rgb=True, cameras=True)
+            fig, self.model, color='rgba(255,0,0,0.5)', name="mapping", points_rgb=True, cameras=cameras)
         fig.show()
 
     def kps_viz_3D(self, query, ret, log, camera):
