@@ -4,6 +4,7 @@ __pycache__
 .ipynb_checkpoints
 outputs/
 build/
+dist/
 labdata/
 datasets/*
 !datasets/theater/
