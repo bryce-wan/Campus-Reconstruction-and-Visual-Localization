@@ -2,8 +2,6 @@
 
 ## Introduction
 
----
-
 Term project of course Introduction to Computer Vision (2023-2024) in Zhejiang University
 
 ## Description
